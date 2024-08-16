@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Felis Image Classification</title>
+  <!-- Use only the necessary fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Georgia|Arial:400" rel="stylesheet">
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <div class="login">
+    <h1>Felis Image Classification</h1>
+
+    <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+      <label for="imageInput">Select an image of a felis:</label>
+      <input type="file" id="imageInput" name="imageInput" accept="image/*" required>
+      <br><br>
+      <input type="submit" value="Predict">
+    </form>
+
+    <div id="imagePreview"></div>
+
+    <p>
+      <b>Predicted Class:</b> {{ predicted_class }}<br>
+    </p>
+  </div>
+
+  <!-- JavaScript for displaying image preview -->
+  <script src="{{ url_for('static', filename='js/displayimage.js') }}"></script>
+</body>
+</html>
