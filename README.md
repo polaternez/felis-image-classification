@@ -3,7 +3,7 @@ This project builds a deep learning model to automatically classify various Feli
 
 - Utilizing the Felis Taxonomy Image Classification dataset from Kaggle.
 - Performing data preprocessing and image augmentation to enhance model generalization.
-- Employing fine-tuning techniques on a pre-trained model for improved accuracy.
+- Employing transfer learning technique on a pre-trained model for improved accuracy.
 - Developing a user-friendly Flask API for real-time species prediction based on image inputs.
 
 
@@ -42,7 +42,7 @@ The project utilizes the <a href="https://www.kaggle.com/datasets/datahmifitb/fe
   - Contrast Adjustment
 
 ## Model Building 
-The model is based on a fine-tuned EfficientNetB0 pre-trained model with the following architecture:
+The model is based on a pre-trained EfficientNetB0 model adapted through transfer learning with the following architecture:
 
 ![alt text](https://github.com/polaternez/felis-image-classification/blob/master/reports/figures/model.png "Convolutional Neural Network(CNN)")
 
