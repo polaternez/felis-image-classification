@@ -8,7 +8,7 @@ This project builds a deep learning model to automatically classify various cat 
 
 
 ## Code and Resources Used 
-**Python Version:** 3.10  
+**Python Version:** 3.12  
 **Packages:** numpy, pandas, matplotlib, tensorflow, tensorflow_datasets, flask, pillow  
 **Flask API Setup:**
 - ```pip install -r requirements.txt```  
